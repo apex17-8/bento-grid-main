@@ -1,0 +1,146 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 40px;
+}
+
+/* Grid setup */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+}
+
+/* Shared card styles */
+.card {
+  padding: 20px;
+  border-radius: 16px;
+  color: #111;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card1 {
+  background: #fce6d7; /* beige */
+  grid-column: span 1;
+  grid-row: span 3; 
+  
+}
+.card1 button {
+  margin-top: auto;
+  background: #ffca4c;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card1 img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card2 {
+  background: #fff;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.card2 img {
+  max-width: 10%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card3 {
+  background: #fbcf67; /* yellow-orange */
+  grid-column: span 1;
+  grid-row: span 3;
+}
+.card3 img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+.card4 {
+  background: #e7d9fb; /* light purple */
+  grid-column: span 1;
+  grid-row: span 1;
+
+}
+
+.card4 img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+.card5 {
+  background: #7045e6; /* deep purple */
+  color: white;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+
+.card5 img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+.card6 {
+  background: #fff6a6; /* pale yellow */
+  grid-column: span 1;
+  grid-row: span 2; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.card6 img {
+  max-width: 10%;
+  height: 10%;
+  border-radius: 8px;
+}
+
+/* Card-specific background colors and spans */
+.card7 {
+  background: #8b6ef5; /* purple */
+  color: white;
+  grid-column: span 1;
+  grid-row: span 1;
+  text-align: center;
+}
+.card7 span { font-style: italic;
+}
+.card7 img{
+  max-width: 30%;
+  height: 20%;
+  border-radius: 5px;
+}
+
+.card8 {
+  background: #ff9409; /* orange */
+  color: white;
+  grid-column: span 2;
+  grid-row: span 1;
+  
+}
+.card8 img{
+  max-width: 30%;
+  height: 20%;
+  border-radius: 5px;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer a { color: #7045e6; }

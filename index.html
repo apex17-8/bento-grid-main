@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countries Info</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <h1 class="title">Where in the world?</h1>
+      <button id="themeToggle" class="btn"> Dark Mode</button>
+    </div>
+  </header>
+
+  <!-- Controls -->
+  <main class="container">
+    <section class="controls">
+      <input id="searchInput" class="search" placeholder="Search for a country..." />
+      <select id="regionFilter" class="select">
+        <option value="">Filter by Region</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </section>
+
+    <!-- Country grid -->
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <!-- Detail overlay -->
+  <div id="detail" class="detail hidden">
+    <div class="detail-card">
+      <button id="detailClose" class="btn back-btn">← Back</button>
+      <div class="detail-body">
+        <img id="detailFlag" src="" alt="flag" class="detail-flag"/>
+        <div class="detail-info">
+          <h2 id="detailName"></h2>
+          <div class="detail-grid">
+            <div>
+              <p><strong>Native Name:</strong> <span id="nativeName"></span></p>
+              <p><strong>Population:</strong> <span id="detailPopulation"></span></p>
+              <p><strong>Region:</strong> <span id="detailRegion"></span></p>
+              <p><strong>Sub Region:</strong> <span id="detailSubregion"></span></p>
+              <p><strong>Capital:</strong> <span id="detailCapital"></span></p>
+            </div>
+            <div>
+              <p><strong>Top Level Domain:</strong> <span id="detailTLD"></span></p>
+              <p><strong>Currencies:</strong> <span id="detailCurrencies"></span></p>
+              <p><strong>Languages:</strong> <span id="detailLanguages"></span></p>
+            </div>
+          </div>
+          <div>
+            <strong>Border Countries:</strong>
+            <div id="borders" class="borders"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

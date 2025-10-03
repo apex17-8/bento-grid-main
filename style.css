@@ -1,0 +1,106 @@
+:root {
+  --bg: #fafafa;
+  --card: #ffffff;
+  --text: #111;
+  --muted: #555;
+  --shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.container {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+.topbar {
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.title { margin: 0; font-size: 1.2rem; }
+.btn {
+  background: var(--card);
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  gap: 1rem;
+}
+.search, .select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.flag {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.card-body { padding: 1rem; }
+.card-body h3 { margin: 0 0 0.5rem; }
+.card-body p { margin: 0.2rem 0; font-size: 0.9rem; color: var(--muted); }
+.detail {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden { display: none; }
+.detail-card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  width: min(800px, 95%);
+}
+.detail-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.detail-flag {
+  width: 300px;
+  max-width: 100%;
+}
+.detail-info { flex: 1; }
+.detail-grid { display: flex; gap: 2rem; flex-wrap: wrap; }
+.borders { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+.border-chip {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: var(--bg);
+}
+body.dark {
+  --bg: #1a202c;
+  --card: #2d3748;
+  --text: #f7fafc;
+  --muted: #a0aec0;
+}
